@@ -71,6 +71,13 @@ ul {
   margin: 0 auto;
 }
 
+.button, .sub-form__btn, .hero__button {
+  display: inline-block;
+  color: var(--minor-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+}
+
 .page-header {
   display: block;
   background-color: var(--minor-color);
@@ -197,13 +204,6 @@ ul {
   text-transform: uppercase;
   max-width: 696px;
   margin: 0 auto 30px;
-}
-
-.button, .sub-form__btn, .hero__button {
-  display: inline-block;
-  color: var(--minor-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
 }
 
 .hero__button {

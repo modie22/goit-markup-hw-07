@@ -21,12 +21,6 @@
   max-width: 696px;
   margin: 0 auto 30px;
 }
-.button {
-  display: inline-block;
-  color: var(--minor-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
-}
 .hero__button {
   @extend .button;
   font-weight: 700;

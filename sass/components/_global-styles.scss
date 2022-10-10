@@ -46,3 +46,9 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
+.button {
+  display: inline-block;
+  color: var(--minor-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+}
