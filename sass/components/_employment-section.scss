@@ -4,16 +4,14 @@
 }
 .work-list {
   display: flex;
-}
-.work-list__item {
+  &__item {
   position: relative;
-
   width: 370px;
 }
-.work-list__item:not(:last-child) {
+  &__item:not(:last-child) {
   margin-right: 30px;
 }
-.work-list__title {
+  &__title {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -29,4 +27,5 @@
   text-transform: uppercase;
   color: var(--minor-color);
   background-color: var(--bg-work-title-color);
+}
 }

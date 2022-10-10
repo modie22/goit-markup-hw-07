@@ -1,24 +1,27 @@
-.address-list__item {
+.address-list{
+  &__item {
   margin-bottom: 9px;
 }
-.address-list__link {
+  &__link {
   color: var(--footer-text-color);
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-list--geoloc {
+  &--geoloc {
   color: var(--minor-color);
 }
-.address-list--geoloc:hover,
-.address-list--geoloc:focus {
+  &--geoloc:hover,
+  &--geoloc:focus {
   color: var(--accent-color);
 }
-.address-list--contact:hover,
-.address-list--contact:focus {
+  &--contact:hover,
+  &--contact:focus {
   color: var(--accent-color);
 }
+}
+
 .footer-section {
   background-color: var(--secondary-bg);
   padding-top: 60px;
@@ -35,18 +38,17 @@
 .container-joinin {
   color: var(--minor-color);
   margin-right: 93px;
-}
-.joinin-list {
-  display: flex;
-}
-.container-joinin__text {
+  &__text {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.875;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.joinin-list__joinin-icon {
+}
+.joinin-list {
+  display: flex;
+  &__joinin-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,20 +58,20 @@
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--minor-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+  background-color: var(--accent-color);
+  }
 }
-.joinin-list__item:not(:last-child) {
+  &__item:not(:last-child) {
   margin-right: 10px;
 }
-.joinin-list__link {
+  &__link {
   fill: currentColor;
 }
-.joinin-list__joinin-icon:hover,
-.joinin-list__joinin-icon:focus {
-  background-color: var(--accent-color);
 }
 
-/*Subscribe*/
 .sub-form__title {
   font-weight: 700;
   font-size: 14px;
@@ -82,12 +84,11 @@
 .sub-form {
   display: flex;
   align-items: flex-end;
-}
-.sub-form__label {
+  &__label {
   display: flex;
   flex-direction: column;
 }
-.sub-form__input {
+  &__input {
   padding-left: 16px;
   height: 50px;
   width: 358px;
@@ -103,7 +104,8 @@
   margin-right: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sub-form__btn {
+  &__btn {
+  @extend .button;
   display: flex;
   align-items: center;
   padding: 10px 28px;
@@ -120,6 +122,7 @@
   color: var(--minor-color);
   cursor: pointer;
 }
-.sub-form__icon {
+  &__icon {
   margin-left: 10px;
+}
 }
