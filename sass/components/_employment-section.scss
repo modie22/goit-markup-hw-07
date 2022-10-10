@@ -1,0 +1,32 @@
+
+.employment-section {
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+}
+.work-list__item {
+  position: relative;
+
+  width: 370px;
+}
+.work-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-list__title {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 0.875;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--minor-color);
+  background-color: var(--bg-work-title-color);
+}
