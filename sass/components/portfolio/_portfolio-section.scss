@@ -19,11 +19,12 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 } 
-    &:hover &__portfolio-text,
-    &:focus &__portfolio-text {
-  transform: translateY(0);
+    &:hover .portfolio-list__portfolio-text,
+    &:focus .portfolio-list__portfolio-text {
+   transform: translateY(0);
 }
 }
+
   &__title {
   color: var(--title-text-color);
   font-size: 18px;
